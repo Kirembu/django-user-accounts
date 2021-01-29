@@ -49,7 +49,7 @@ class AccountAppConf(AppConf):
     SETTINGS_REDIRECT_URL = "account_settings"
     NOTIFY_ON_PASSWORD_CHANGE = True
     DELETION_EXPUNGE_HOURS = 48
-    HOOKSET = "account.hooks.AccountDefaultHookSet"
+    HOOKSET = "zerxis_account.hooks.AccountDefaultHookSet"
     TIMEZONES = TIMEZONES
     LANGUAGES = LANGUAGES
 

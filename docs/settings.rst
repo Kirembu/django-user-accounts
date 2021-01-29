@@ -128,7 +128,7 @@ Default: ``48``
 ``ACCOUNT_HOOKSET``
 ===================
 
-Default: ``"account.hooks.AccountDefaultHookSet"``
+Default: ``"zerxis_account.hooks.AccountDefaultHookSet"``
 
 This setting allows you define your own hooks for specific functionality that
 django-user-accounts exposes. Point this to a class using a string and you can
