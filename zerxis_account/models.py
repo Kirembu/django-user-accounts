@@ -25,7 +25,7 @@ from .signals import signup_code_sent, signup_code_used
 
 class Account(models.Model):
 
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, related_name="account", verbose_name=_("user"), on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, related_name="zerxis_account", verbose_name=_("user"), on_delete=models.CASCADE)
     timezone = TimeZoneField(_("timezone"))
     language = models.CharField(
         _("language"),
