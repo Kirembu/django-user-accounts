@@ -7,10 +7,10 @@ from django.contrib.auth import get_user_model
 from django.utils.encoding import force_text
 from django.utils.translation import gettext_lazy as _
 
-from account.conf import settings
-from account.hooks import hookset
-from account.models import EmailAddress
-from account.utils import get_user_lookup_kwargs
+from .conf import settings
+from .hooks import hookset
+from .models import EmailAddress
+from .utils import get_user_lookup_kwargs
 
 alnum_re = re.compile(r"^\w+$")
 

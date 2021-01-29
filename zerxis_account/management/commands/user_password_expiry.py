@@ -1,8 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.core.management.base import LabelCommand
 
-from account.conf import settings
-from account.models import PasswordExpiry
+from .conf import settings
+from .models import PasswordExpiry
 
 
 class Command(LabelCommand):

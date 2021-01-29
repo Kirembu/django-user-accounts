@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect, QueryDict
 from django.urls import NoReverseMatch, reverse
 
 import pytz
-from account.conf import settings
+from .conf import settings
 
 from .models import PasswordHistory
 

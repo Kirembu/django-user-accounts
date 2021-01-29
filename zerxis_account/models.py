@@ -14,13 +14,13 @@ from django.utils import timezone, translation
 from django.utils.translation import gettext_lazy as _
 
 import pytz
-from account import signals
-from account.conf import settings
-from account.fields import TimeZoneField
-from account.hooks import hookset
-from account.languages import DEFAULT_LANGUAGE
-from account.managers import EmailAddressManager, EmailConfirmationManager
-from account.signals import signup_code_sent, signup_code_used
+from . import signals
+from .conf import settings
+from .fields import TimeZoneField
+from .hooks import hookset
+from .languages import DEFAULT_LANGUAGE
+from .managers import EmailAddressManager, EmailConfirmationManager
+from .signals import signup_code_sent, signup_code_used
 
 
 class Account(models.Model):

@@ -15,9 +15,9 @@ from django.views.decorators.debug import sensitive_post_parameters
 from django.views.generic.base import TemplateResponseMixin, View
 from django.views.generic.edit import FormView
 
-from account import signals
-from account.conf import settings
-from account.forms import (
+from . import signals
+from .conf import settings
+from .forms import (
     ChangePasswordForm,
     LoginUsernameForm,
     PasswordResetForm,
@@ -25,9 +25,9 @@ from account.forms import (
     SettingsForm,
     SignupForm,
 )
-from account.hooks import hookset
-from account.mixins import LoginRequiredMixin
-from account.models import (
+from .hooks import hookset
+from .mixins import LoginRequiredMixin
+from .models import (
     Account,
     AccountDeletion,
     EmailAddress,
@@ -35,7 +35,7 @@ from account.models import (
     PasswordHistory,
     SignupCode,
 )
-from account.utils import default_redirect, get_form_data
+from .utils import default_redirect, get_form_data
 
 
 class PasswordMixin(object):

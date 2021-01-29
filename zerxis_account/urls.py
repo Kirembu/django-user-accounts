@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from account.views import (
+from .views import (
     ChangePasswordView,
     ConfirmEmailView,
     DeleteView,

@@ -9,10 +9,10 @@ from django.utils.cache import patch_vary_headers
 from django.utils.deprecation import MiddlewareMixin as BaseMiddleware
 from django.utils.translation import gettext_lazy as _
 
-from account import signals
-from account.conf import settings
-from account.models import Account
-from account.utils import check_password_expired
+from . import signals
+from .conf import settings
+from .models import Account
+from .utils import check_password_expired
 
 
 class LocaleMiddleware(BaseMiddleware):

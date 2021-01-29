@@ -3,8 +3,8 @@ import importlib
 from django.conf import settings  # noqa
 from django.core.exceptions import ImproperlyConfigured
 
-from account.languages import LANGUAGES
-from account.timezones import TIMEZONES
+from .languages import LANGUAGES
+from .timezones import TIMEZONES
 from appconf import AppConf
 
 

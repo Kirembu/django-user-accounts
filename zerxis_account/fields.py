@@ -1,6 +1,6 @@
 from django.db import models
 
-from account.conf import settings
+from .conf import settings
 
 
 class TimeZoneField(models.CharField):

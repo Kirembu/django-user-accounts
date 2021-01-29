@@ -2,8 +2,8 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 
-from account.models import EmailAddress
-from account.utils import get_user_lookup_kwargs
+from .models import EmailAddress
+from .utils import get_user_lookup_kwargs
 
 
 class UsernameAuthenticationBackend(ModelBackend):

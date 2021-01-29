@@ -1,5 +1,5 @@
-from account.conf import settings
-from account.models import Account
+from .conf import settings
+from .models import Account
 
 
 def account(request):

@@ -1,7 +1,7 @@
 from django.contrib.auth import REDIRECT_FIELD_NAME
 
-from account.conf import settings
-from account.utils import handle_redirect_to_login
+from .conf import settings
+from .utils import handle_redirect_to_login
 
 
 class LoginRequiredMixin(object):
