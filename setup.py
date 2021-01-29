@@ -1,14 +1,14 @@
 from setuptools import find_packages, setup
 
 setup(
-    name="django-user-accounts",
+    name="zerxis-user-accounts",
     version="3.0.2",
     author="Brian Rosner",
     author_email="brosner@gmail.com",
     description="a Django user account app",
     long_description=open("README.md").read(),
     license="MIT",
-    url="http://github.com/pinax/django-user-accounts",
+    url="http://github.com/kirembu/zerxis-user-accounts",
     packages=find_packages(),
     install_requires=[
         "Django>=2.2",
@@ -17,7 +17,7 @@ setup(
     ],
     zip_safe=False,
     package_data={
-        "account": [
+        "zerxis_account": [
             "locale/*/LC_MESSAGES/*",
         ],
     },
