@@ -7,8 +7,8 @@ from django.test import TestCase, override_settings
 from django.urls import reverse
 from django.utils.http import int_to_base36
 
-from account.models import EmailConfirmation, SignupCode
-from account.views import INTERNAL_RESET_URL_TOKEN, PasswordResetTokenView
+from .models import EmailConfirmation, SignupCode
+from .views import INTERNAL_RESET_URL_TOKEN, PasswordResetTokenView
 
 
 class SignupViewTestCase(TestCase):

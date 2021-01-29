@@ -4,7 +4,7 @@ from django.template.defaulttags import URLNode
 from django.utils.html import conditional_escape
 from django.utils.http import urlencode
 
-from account.utils import user_display
+from ..utils import user_display
 
 register = template.Library()
 
