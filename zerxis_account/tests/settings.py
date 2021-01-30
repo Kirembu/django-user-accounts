@@ -6,8 +6,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.sites",
     "django.contrib.messages",
-    "account",
-    "account.tests",
+    "zerxis_account",
+    "zerxis_account.tests",
 ]
 DATABASES = {
     "default": {
@@ -16,7 +16,7 @@ DATABASES = {
     }
 }
 SITE_ID = 1
-ROOT_URLCONF = "account.tests.urls"
+ROOT_URLCONF = "zerxis_account.tests.urls"
 SECRET_KEY = "notasecret"
 TEMPLATES = [
     {

@@ -25,7 +25,7 @@ def middleware_kwarg(value):
 )
 @modify_settings(
     **middleware_kwarg({
-        "append": "account.middleware.ExpiredPasswordMiddleware"
+        "append": "zerxis_account.middleware.ExpiredPasswordMiddleware"
     })
 )
 class PasswordExpirationTestCase(TestCase):
@@ -134,7 +134,7 @@ class PasswordExpirationTestCase(TestCase):
 
 @modify_settings(
     **middleware_kwarg({
-        "append": "account.middleware.ExpiredPasswordMiddleware"
+        "append": "zerxis_account.middleware.ExpiredPasswordMiddleware"
     })
 )
 class ExistingUserNoHistoryTestCase(TestCase):

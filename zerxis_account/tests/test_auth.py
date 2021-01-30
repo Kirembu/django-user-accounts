@@ -5,7 +5,7 @@ from django.test import TestCase, override_settings
 
 @override_settings(
     AUTHENTICATION_BACKENDS=[
-        "account.auth_backends.UsernameAuthenticationBackend"
+        "zerxis_account.auth_backends.UsernameAuthenticationBackend"
     ]
 )
 class UsernameAuthenticationBackendTestCase(TestCase):
@@ -44,7 +44,7 @@ class UsernameAuthenticationBackendTestCase(TestCase):
 
 @override_settings(
     AUTHENTICATION_BACKENDS=[
-        "account.auth_backends.EmailAuthenticationBackend"
+        "zerxis_account.auth_backends.EmailAuthenticationBackend"
     ]
 )
 class EmailAuthenticationBackendTestCase(TestCase):
